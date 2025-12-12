@@ -47,7 +47,7 @@ const games = [
   {
     title: "魔法少女ノ常夏島",
     role: "Pr / シナリオ",
-    desc: "traP作品",
+    desc: "同人作品",
     link: null,
   },
 ];
