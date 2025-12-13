@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 // データを管理しやすくするために配列にしておきます
 const games = [
@@ -79,6 +80,16 @@ export default function Home() {
       <div className="max-w-3xl mx-auto px-6 py-12">
         {/* --- ヘッダー・自己紹介エリア --- */}
         <header className="mb-12 text-center md:text-left">
+          <div className="shrink-0">
+              <div className="relative w-32 h-32 md:w-40 md:h-40">
+                <Image
+                  src="/icon.png" // publicフォルダに入れた画像パス
+                  alt="enari_K Icon"
+                  fill // 親要素(div)に合わせていっぱいに広げる設定
+                  className="rounded-full object-cover border-4 border-white shadow-lg"
+                />
+              </div>
+            </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
             enari_K
           </h1>
