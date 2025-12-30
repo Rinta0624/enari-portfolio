@@ -92,6 +92,7 @@ export default function Home() {
                   src="/icon.png" // publicフォルダに入れた画像パス
                   alt="enari_K Icon"
                   fill // 親要素(div)に合わせていっぱいに広げる設定
+                  priority // これを追加
                   className="rounded-full object-cover border-4 border-white shadow-lg"
                 />
               </div>
