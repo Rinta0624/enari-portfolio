@@ -1,18 +1,53 @@
 import Link from "next/link";
 import Image from "next/image";
+import { title } from "process";
 
 // 自信のある作品のタイトルリスト
 const CONFIDENT_PROJECTS = [
+  "Material-based Physics Engine",
+  "Nand to Tetris",
+  "No framework web",
   "悪夢祓いのアリス",
   "君を蝕むこの力で",
   "超安心安全な最悪の鬱ゲー",
-  "Make 10sion",
-  "魔法少女ノ常夏島",
-  "Internship SNS",
   "君をむしばむこの力で 公式HP",
 ];
 
 const allProjects = [
+  // プロジェクトデータに追加
+{
+  title: "Material-based Physics Engine",
+  role: "Lead Developer (Materials Science x CS)",
+  desc: "材料力学の知見を導入した物理エンジン。剛体物理に加え、せん断応力やひずみテンソルを考慮した変形体シミュレーションを実装。ヤング率等の物性値をパラメータとして与えることで、現実の物質挙動を再現。",
+  link: null, // リポジトリがあれば
+  zenn: "https://zenn.dev/enari_k/articles/f21bc592f87a7a", // 例の記事
+  category: "R&D",
+  tags: ["C#", "Physics", "Math", "Optimization"]
+},
+{
+  title:"Nand to Tetris",
+  role:"engineer",
+  desc:"Nand回路一つを出発点にコンピューター上にコンピューターを製作しTetrisを実装する",
+  link:null,
+  zenn:null,
+  category:"computer science",
+},
+{
+  title:"No framework web",
+  role:"engineer",
+  desc:"フレームワークを使わずGoのみでWebサイトを実装する",
+  link:null,
+  zenn:null,
+  category:"computer science",
+},
+{
+  title:"GCI",
+  role:"Data Scientist",
+  desc:"機械学習について理解し、データから企業に提案するところまで",
+  link:null,
+  zenn:null,
+  category:"computer science",
+},
   {
     title: "悪夢祓いのアリス",
     role: "グラフィック / シナリオ",
@@ -237,10 +272,15 @@ function SocialLink({ href, label, color }: { href: string; label: string; color
 
 function ProjectCard({ data, isArchive }: { data: any; isArchive: boolean }) {
   return (
+      
     <div className={`
       p-5 rounded-xl border flex flex-col h-full transition-all duration-200
       ${isArchive ? "bg-gray-50 border-gray-100 opacity-80" : "bg-white border-gray-100 shadow-sm hover:shadow-md"}
     `}>
+    {/* カテゴリバッジ */}
+      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-600 w-fit mb-2">
+        {data.category}
+      </span>
       <h3 className={`font-bold text-lg mb-1 ${isArchive ? "text-gray-600" : "text-gray-900"}`}>{data.title}</h3>
       <p className="text-xs text-gray-500 mb-2 uppercase tracking-wide">{data.role}</p>
       <p className="text-sm text-gray-700 flex-grow mb-4">{data.desc}</p>
