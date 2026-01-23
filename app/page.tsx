@@ -4,6 +4,7 @@ import { title } from "process";
 
 // 自信のある作品のタイトルリスト
 const CONFIDENT_PROJECTS = [
+  "traPortal",
   "Material-based Physics Engine",
   "Nand to Tetris",
   "No framework web",
@@ -15,6 +16,15 @@ const CONFIDENT_PROJECTS = [
 
 const allProjects = [
   // プロジェクトデータに追加
+{
+  title: "traPortal",
+  role: "programmer",
+  desc: "サークルtraPの800人の部員の実データを扱う部員の情報管理サービスです。主に入部の手続きや合宿などのイベントで必要な情報を提供するために用いられています。",
+  link: null,
+  zenn: "https://trap.jp/post/1181/",
+  category: "Web",
+  tags: ["Go","Github Actions","Allowance","portal"]
+},
 {
   title: "Material-based Physics Engine",
   role: "Lead Developer (Materials Science x CS)",
