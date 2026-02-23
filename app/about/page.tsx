@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { title } from "process";
+import { resume } from "react-dom/server";
 
 // 証書画像のリスト
 const CERT_IMAGES = [
@@ -20,6 +21,11 @@ const AWARDS_LIST = [
     result: "11月月間賞", 
     // 結果発表ページや、自分の作品掲載ページのURL
     link: "https://game.creators-guild.com/g4c/38552/" 
+  },
+  {
+    title:"2024 1-Monthon (部内ハッカソン)",
+    result:"優秀賞",
+    link:"https://trap.jp/post/2377/"
   },
   { 
     title: "AtCoder Beginner Contest 446", 
