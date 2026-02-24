@@ -9,9 +9,10 @@ const CONFIDENT_PROJECTS = [
   "traQ",
   "Material-based Physics Engine",
   "Nand to Tetris",
-  "No framework web",
+  "idexias",
+  //"No framework web",
   "悪夢祓いのアリス",
-  "君を蝕むこの力で"
+  //"君を蝕むこの力で"
 ];
 
 const allProjects = [
@@ -50,6 +51,14 @@ const allProjects = [
   link:"https://github.com/enari-k/Nand-to-Tetris", 
   zenn:"https://zenn.dev/enari_k/articles/e63b21cd3057df",
   category:"computer science",
+},
+{
+  title:"idexias",
+  role:"infra and backend",
+  desc:"AIを駆使しながらアイディアの収束、発散を助けるアプリ。",
+  link:null,
+  zenn:"https://topaz.dev/projects/d9742d7ea95efd61b647",
+  category:"Web",
 },
 /*{
   title:"No framework web",
